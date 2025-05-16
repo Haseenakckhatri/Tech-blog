@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Tech Reader Team" }],
 };
 
-export const revalidate = 3600; 
+export const revalidate = 3600;
 
 export default async function HomePage() {
   let posts: Post[] = [];
