@@ -29,7 +29,7 @@ export default function PostCard({ post }: PostCardProps) {
     attributes.publishedDate || attributes.publishedAt
   );
   const readingTime = getReadingTime(attributes.content);
-  const excerpt = attributes.content.slice(0, 150);
+  //   const excerpt = attributes.content.slice(0, 150);
 
   return (
     <article className="bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden group">
@@ -88,10 +88,6 @@ export default function PostCard({ post }: PostCardProps) {
           <h2 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors">
             {attributes.title}
           </h2>
-
-          <p className="text-gray-600 text-sm leading-relaxed line-clamp-3 mb-4">
-            {excerpt}...
-          </p>
 
           <div className="flex items-center justify-between pt-4 border-t border-gray-100">
             <div className="flex items-center gap-2">

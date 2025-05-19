@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Tech Reader Team" }],
 };
 
-export const revalidate = 3600; 
+export const revalidate = 3600;
 
 export default async function HomePage() {
   let posts: Post[] = [];
@@ -38,7 +38,6 @@ export default async function HomePage() {
     posts = await fetchPosts();
   } catch (error) {
     console.error("Error fetching posts:", error);
-    // Don't throw error, show empty state instead
     posts = [];
   }
 
