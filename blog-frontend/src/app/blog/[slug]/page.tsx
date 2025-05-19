@@ -499,6 +499,7 @@ export default async function BlogDetailPage({ params }: BlogPageProps) {
   }
 }
 
+
 function SocialShareButton({
   platform,
   url,
