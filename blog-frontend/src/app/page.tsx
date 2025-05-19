@@ -38,7 +38,6 @@ export default async function HomePage() {
     posts = await fetchPosts();
   } catch (error) {
     console.error("Error fetching posts:", error);
-    // Don't throw error, show empty state instead
     posts = [];
   }
 
